@@ -1,66 +1,120 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* General layout */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  background: #f4f4f4;
-  color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    max-width: 1000px;
+    margin: auto;
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #2c3e50;
 }
 
 header {
-  background: linear-gradient(to right, #4facfe, #00f2fe);
-  color: white;
-  text-align: center;
-  padding: 80px 20px;
+    text-align: center;
+    margin: 2em auto;
 }
 
-header img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  transform: scale(0);
-  transition: transform 0.8s ease;
+header h1 {
+    font-size: 3em;
+    letter-spacing: .4em;
+    font-weight: 700;
+    margin: 0;
+    color: #2c3e50;
 }
 
-h1 span {
-  color: #ffe600;
+.subtitle {
+    font-size: 1em;
+    font-style: italic;
+    color: #555;
+    margin: 0.5em 0;
 }
 
-section {
-  padding: 50px 20px;
-  background: white;
-  margin: 20px auto;
-  max-width: 900px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+hr {
+    border: none;
+    background-color: lightgray;
+    height: 1px;
+    margin: 1em 0;
 }
 
-section h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
+main { 
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap: 2em;
+    margin: 2em;
 }
 
-ul {
-  list-style-type: disc;
-  padding-left: 40px;
+/* Section cards */
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
 }
 
-.project-card {
-  background: #f0f0f0;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-left: 5px solid #4facfe;
+h2 {
+    font-size: 1.4em;
+    color: #2980b9;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #222;
-  color: #ddd;
+h3 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+p {
+    margin: 5px 0;
+}
+
+/* Skills */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.skills-list li {
+    background: #ecf0f1;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/* Education cards */
+.edu-card {
+    background: #f4f6f7;
+    padding: 12px 15px;
+    border-left: 4px solid #3498db;
+    margin-bottom: 12px;
+    border-radius: 5px;
+}
+
+.edu-card h3 {
+    margin: 0;
+    color: #2980b9;
+}
+
+.edu-card p {
+    margin: 4px 0;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.edu-card span {
+    font-size: 0.85em;
+    color: #7f8c8d;
+}
+
+/* About text */
+#card-text {
+    font-style: italic;
+    font-size: 0.95em;
+    color: #444;
 }
