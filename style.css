@@ -118,3 +118,8 @@ p {
     font-size: 0.95em;
     color: #444;
 }
+
+footer{
+    color: red;
+    font-weight: bold;
+}
